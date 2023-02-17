@@ -8,10 +8,9 @@ metadata:
   name: example
 spec:
   forProvider:
-    name: example
-    region: us-west-1
-    releaseLabel: emr-6.6.0
-    type: hive
+    region: us-east-1
+    releaseLabel: emr-6.9.0
+    type: spark
 
 ---
 
