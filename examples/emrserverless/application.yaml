@@ -11,6 +11,3 @@ spec:
     region: us-east-1
     releaseLabel: emr-6.9.0
     type: spark
-
----
-
