@@ -1923,6 +1923,11 @@ var ExternalNameConfigs = map[string]config.ExternalName{
 	// EMR Security Configurations can be imported using the name
 	"aws_emr_security_configuration": config.NameAsIdentifier,
 
+	// emrserverless
+	//
+	// EMR Serverless Application is important by an ID assigned by the provider
+	"aws_emrserverless_application": config.IdentifierFromProvider,
+
 	// qldb
 	//
 	// QLDB Ledgers can be imported using the name

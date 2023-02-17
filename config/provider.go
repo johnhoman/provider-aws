@@ -47,6 +47,7 @@ import (
 	"github.com/upbound/provider-aws/config/elasticloadbalancing"
 	"github.com/upbound/provider-aws/config/elb"
 	"github.com/upbound/provider-aws/config/elbv2"
+	"github.com/upbound/provider-aws/config/emrserverless"
 	"github.com/upbound/provider-aws/config/firehose"
 	"github.com/upbound/provider-aws/config/fsx"
 	"github.com/upbound/provider-aws/config/gamelift"
@@ -186,6 +187,7 @@ func GetProvider() *config.Provider {
 		elasticloadbalancing.Configure,
 		elb.Configure,
 		elbv2.Configure,
+		emrserverless.Configure,
 		firehose.Configure,
 		gamelift.Configure,
 		globalaccelerator.Configure,
