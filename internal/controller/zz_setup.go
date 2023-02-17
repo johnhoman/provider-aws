@@ -425,6 +425,7 @@ import (
 	lbtargetgroup "github.com/upbound/provider-aws/internal/controller/elbv2/lbtargetgroup"
 	lbtargetgroupattachment "github.com/upbound/provider-aws/internal/controller/elbv2/lbtargetgroupattachment"
 	securityconfiguration "github.com/upbound/provider-aws/internal/controller/emr/securityconfiguration"
+	applicationemrserverless "github.com/upbound/provider-aws/internal/controller/emrserverless/application"
 	deliverystream "github.com/upbound/provider-aws/internal/controller/firehose/deliverystream"
 	backup "github.com/upbound/provider-aws/internal/controller/fsx/backup"
 	datarepositoryassociation "github.com/upbound/provider-aws/internal/controller/fsx/datarepositoryassociation"
@@ -1253,6 +1254,7 @@ func Setup(mgr ctrl.Manager, o controller.Options) error {
 		lbtargetgroup.Setup,
 		lbtargetgroupattachment.Setup,
 		securityconfiguration.Setup,
+		applicationemrserverless.Setup,
 		deliverystream.Setup,
 		backup.Setup,
 		datarepositoryassociation.Setup,
